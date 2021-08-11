@@ -1,5 +1,5 @@
 html{
-    min-width: 325px;
+    min-width: 350px;
     background-color: #0D0D0D;
 }
 
@@ -26,6 +26,7 @@ html{
 .title-text{
     text-align: right;
     color: white;
+    padding-right: 10px;
 }
 
 .content-text{
