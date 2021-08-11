@@ -37,13 +37,6 @@ document.addEventListener("keydown", function (e) {
     };
 });
 
-//If the user click on the youtube icon, focus back on the Search Box //removed, the experience is subpar
-//document.getElementById('logo').addEventListener('click', function(e){
-//    if (isAutoFocusEnabled) {
-//        document.querySelector('#search-input #search').focus();
-//    }
-//});
-
 //Retreived messages from the Extension settings popup. Mostly to refresh the settings on the current page
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) 
 { 
