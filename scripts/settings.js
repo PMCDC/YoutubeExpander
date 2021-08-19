@@ -27,10 +27,4 @@ async function RefreshSettingsOnPage() {
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
     chrome.tabs.sendMessage(tab.id, {'callFunction': 'RefreshSettings'});
-
-    //chrome.scripting.executeScript({
-    //    target: { tabId: tab.id, allFrames: true },
-    //    files: ['/scripts/listeners.js']
-    //    //files: ['/scripts/test.js']
-    //});
 }
