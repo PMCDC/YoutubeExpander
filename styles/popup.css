@@ -27,6 +27,9 @@ html{
     text-align: right;
     color: white;
     padding-right: 10px;
+    display: inline-block;
+    position: relative;
+    bottom: 12px;
 }
 
 .content-text{
@@ -54,4 +57,18 @@ html{
 
 .title-oneline h2{
     flex: auto;
+}
+
+.icons{
+    height: 40px;
+    text-align: right;
+    padding-right: 15px;
+    margin-top: 5px;
+    filter: invert(15%) sepia(64%) saturate(5034%) hue-rotate(354deg) brightness(114%) contrast(128%);
+}
+
+.container-title{
+    text-align: right;
+    width: 100%;
+    max-height: 50px;
 }

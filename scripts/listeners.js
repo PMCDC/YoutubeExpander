@@ -33,6 +33,7 @@ if (window.location.href === 'https://www.youtube.com/') {
 document.addEventListener("keydown", function (e) {
     if (e.keyCode == 70 && e.ctrlKey && isHotKeysForSearchBoxEnabled) {
         e.preventDefault();
+        document.getElementById('search-button-narrow').click(); //When the window is very small, this will bring back the search bar
         document.querySelector('#search-input #search').focus();
     };
 });
