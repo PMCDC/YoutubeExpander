@@ -7,6 +7,7 @@
 //Declare settings variable
 var isHotKeysForSearchBoxEnabled = true;
 var isAutoFocusEnabled = true;
+var youtubeUrl = 'https://www.youtube.com/';
 
 //Load the user settings
 RefreshSettings();
@@ -23,13 +24,13 @@ function RefreshSettings(){
 }
 
 //Focus on the Search Box when the page is fully loaded
-if (window.location.href === 'https://www.youtube.com/') {
+if (window.location.href === youtubeUrl) {
     if (isAutoFocusEnabled) {
         document.querySelector('#search-input #search').focus();
     }
 }
 
-//Focus on the Search Box if [CTR] + [F] is pressed
+//Focus on the Search Box if [CTRL] + [F] is pressed
 document.addEventListener("keydown", function (e) {
     if (e.keyCode == 70 && e.ctrlKey && isHotKeysForSearchBoxEnabled) {
         e.preventDefault();
