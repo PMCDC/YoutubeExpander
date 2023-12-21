@@ -1,0 +1,25 @@
+/* Hide the context panel of youtube. */
+#clarify-box{
+    display: none !important;
+}
+
+/* Hide the default scrollbar */
+body::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -24,8 +24,9 @@ function RefreshSettings(){
 }
 
 //Focus on the Search Box when the page is fully loaded
-if (window.location.href === youtubeUrl) {
+if (window.location.href.startsWith(youtubeUrl)) {
     if (isAutoFocusEnabled) {
+        console.log("Youtube Expander: Focus On Search")
         document.querySelector('#search-input #search').focus();
     }
 }

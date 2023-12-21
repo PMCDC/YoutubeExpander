@@ -6,7 +6,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["storage", "activeTab"],
+  "permissions": ["storage", "activeTab", "tabs", "scripting"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -23,8 +23,9 @@
     "128": "/images/yt-ex-128.png"
   },
   "content_scripts": [{
-    "matches": ["https://www.youtube.com/*"],
+    "matches": ["https://*.youtube.com/*"],
     "js": ["/scripts/listeners.js"],
     "run_at": "document_end"
-  }]
+  }],
+  "host_permissions": ["https://*/*"]
 }
